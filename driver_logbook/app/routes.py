@@ -1,7 +1,7 @@
-from app import app, db
+from driver_logbook.app import app, db
 from flask import render_template, redirect, url_for
-from app.forms import FuelLogCreateForm
-from app.model import FuelLog
+from driver_logbook.app.forms import FuelLogCreateForm
+from driver_logbook.app.model import FuelLog
 from flask_login import login_required, current_user
 
 

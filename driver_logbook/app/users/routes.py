@@ -1,9 +1,9 @@
-from app import db
+from driver_logbook.app import db
 from flask import render_template, redirect, url_for, flash
-from app.forms import LoginForm, CreateUserForm
-from app.model import User
+from driver_logbook.app.forms import LoginForm, CreateUserForm
+from driver_logbook.app.model import User
 from flask_login import login_required, login_user, current_user, logout_user
-from app.users import bp
+from driver_logbook.app.users import bp
 
 
 @bp.route('/index')
