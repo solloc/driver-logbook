@@ -1,0 +1,22 @@
+{% extends "base.html.j2" %}
+
+{% block app_content %}
+<table border=1>
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>E-Mail</th>
+        <th>Admin</th>
+    </thead>
+    <tbody>
+        {% for user in users %}
+        <tr>
+            <td align="right">{{ user.id }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.email if user.email else '' }}</td>
+            <td align="center">{{ "&#9989;" if user.admin else '' }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock app_content %}
