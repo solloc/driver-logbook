@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "driver-logbook"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "Driver Logbook. Fuel and distance tracking"
+authors = ["Matthias Maisch <matthias@maisch.me>"]
+readme = README.md
 
 [tool.poetry.dependencies]
 python = "^3.8"
